@@ -9,8 +9,8 @@
     <title>App</title>
 </head>
 <body>
-    <div class="h-screen w-full flex flex-col">
-         <nav class="flex flex-row items-center w-full justify-between p-[35px]">
+    <div class="h-screen w-full flex flex-col p-[35px] gap-10">
+        <nav class="flex flex-row items-center w-full justify-between">
             <div class="logo">
                 <img src="#" alt="Logo">
             </div>
@@ -24,13 +24,53 @@
                     <button><i class="fa-solid fa-magnifying-glass text-[15px] "></i></button>
                 </li>
                 <li class="rounded-full border h-[30px] w-[30px] p-[15px] items-center flex justify-center grey-border transform hover:scale-[1.2] duration-300">
-                    <button onclick="location.href = '/favorites'"><i class="fa-regular fa-heart text-[15px]"></i></button>
+                    <button onclick="location.href = '/favorites'"><i class="fa-regular fa-heart text-[15px] text-pink-500"></i></button>
                 </li>
                 <li class="rounded-full border h-[30px] w-[30px] p-[15px] items-center flex justify-center grey-border transform hover:scale-[1.2] duration-300">
                     <button onclick="location.href='/cart'"><i class="fa-solid fa-cart-shopping text-[15px]"></i></button>
                 </li>
             </ul>
-         </nav>
+        </nav>
+
+        <section class="h-[60%] w-full flex flex-row gap-[15px]">
+            <div class="w-[45%] h-full">
+                <img src="/public/images/hero-section-image1.jpg" alt="" class="h-full w-full rounded-xl object-cover items-center">
+            </div>
+            <div class="grid grid-rows-2 w-[25%] h-full gap-[15px]">
+                <div class="w-full rounded-xl border"><img src="/public/images/hero-section-image2.jpg" alt="" class="h-full w-full rounded-xl object-cover items-center"></div>
+                <div class="w-full rounded-xl border"><img src="/public/images/hero-section-image4.jpg" alt="image 4" class="h-full w-full rounded-xl object-cover items-center"></div>
+            </div>
+            <div class="w-[30%] h-full rounded-xl">
+                <img src="/public/images/hero-secion-image3.jpg" alt="" class="h-full w-full rounded-xl object-cover items-center">
+            </div>
+        </section>
+
+        <section class="h-[30%] flex justify-between">
+            <div class="flex flex-col text-center h-full">
+                <div class="flex flex-col leading-none">
+                   <span class="text-[100px] text-orange-500 font-black">Fashion</span>
+                   <span class="text-[100px] text-orange-500 font-black">Elevates</span>
+                </div>
+            </div>
+            <div class="w-[40%] flex flex-col gap-[15px] h-full justify-center">
+                <p class="text-gray-400">Redefining fashion with sustainable, affordable, and essential thrifted pieces.</p>
+                <div class="flex flex-row gap-20 items-center">
+                    <button class="bg-orange-400 text-white rounded-full h-[50px] w-[150px] flex flex-row gap-5 items-center justify-center text-[1.2 rem] transform hover:scale-[1.2] duration-300">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                    <div class="flex flex-row gap-[15px]">
+                        <div class="rounded-full border h-[40px] w-[40px] p-[15px] flex items-center justify-center grey-border transform hover:scale-[1.2] duration-300">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center">
+                                <i class="fa-brands fa-facebook text-[20px] text-orange-400"></i>
+                            </a>
+                        </div>
+                        <div class="rounded-full border h-[40px] w-[40px] p-[15px] flex items-center justify-center grey-border transform hover:scale-[1.2] duration-300">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center">
+                                <i class="fa-brands fa-instagram text-[20px] text-orange-400"></i>
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>

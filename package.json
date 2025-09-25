@@ -1,0 +1,27 @@
+{
+  "name": "ecossential",
+  "version": "1.0.0",
+  "description": "Ecossential Website",
+  "main": "server/server.js",
+  "scripts": {
+    "devStart": "nodemon /server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lancejerson/ecossential-2.0.git"
+  },
+  "author": "Lance Jerson Demonteverde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lancejerson/ecossential-2.0/issues"
+  },
+  "homepage": "https://github.com/lancejerson/ecossential-2.0#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "keywords": []
+}
