@@ -8,3 +8,7 @@
     border: 1px solid grey;
     border-color: rgb(158, 158, 158);
 }
+
+.brown-text{
+    color: rgba(150, 43, 43, 0.912);
+}
