@@ -1,4 +1,4 @@
 09/26/2025 - Yesterday(09/25/2025) I made intialized the app and made the navigation bar, today I will improve it more and start on the hero section. Blockers: None.
 
-09/27/2025 - Yesterday(09/26/2025) I already finished the hero section of Ecossential, today I will make the products section and checkout. Blockers: None.
+09/27/2025 - Yesterday(09/26/2025) I already finished the hero section of Ecossential, today I will make the products section and render it on the server. Blockers: None.
 
