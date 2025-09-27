@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="./app/styles/style.css">
 </head>
 <body>
-    <div class="grid grid-col-4 gap-10 justify-center items-center">
-        <div class="flex flex-row gap-5" id="container">
-            <!--items-->
-            <p>Hello World</p>
+    <div class="h-screen w-screen flex justify-center items-center p-[35px]">
+        <div class="flex flex-col h-full w-[80%] gap-[15px] overflow-y-scroll pb-[15px]">
+            <div class="grid grid-cols-4 gap-[15px] w-full justify-center items-center" id="container">
+                <!-- Product cards will be dynamically inserted here -->
+            </div>
         </div>
     </div>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js" type="module"></script>
 </body>
 </html>

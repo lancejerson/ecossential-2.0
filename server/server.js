@@ -45,6 +45,6 @@ app.post('/products', (req, res) => {
     res.redirect("/Products")
 })
 
-app.listen(PORT, async () => {
+app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
