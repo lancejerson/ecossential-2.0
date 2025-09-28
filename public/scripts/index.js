@@ -18,9 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         container.appendChild(productContainer);
         const productButton = productContainer.querySelector('.product-button');
         productButton.addEventListener('click', () => {
-            // Store the selected product data and navigate to details page
-            localStorage.setItem('selectedProduct', JSON.stringify(product));
-            window.location.href = '/detail';
-        });
+            localStorage.setItem('selectedProduct', JSON.stringify(product))
+            window.location.href='/detail'
+        })
     });
 });
