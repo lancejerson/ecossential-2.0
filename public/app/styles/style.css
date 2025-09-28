@@ -12,3 +12,11 @@
 .brown-text{
     color: rgba(150, 43, 43, 0.912);
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

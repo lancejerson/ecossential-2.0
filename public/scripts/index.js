@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const productContainer = document.createElement('div');
         productContainer.className = 'flex flex-col gap-[15px]';
         productContainer.innerHTML = `
-            <button class='flex justify-center items-center rounded-xl overflow-hidden'>
+            <button class='flex justify-center items-center rounded-xl overflow-hidden product-button'>
                 <img src="${product.image}" alt="${product.name}" class="object-cover rounded-xl transform hover:scale-[1.05] duration-300 active:scale-[1.1] duration-300">
             </button>
             <div class='flex justify-between text-[15px] p-[10px]'>
@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
         container.appendChild(productContainer);
+        const productButton = productContainer.querySelector('.product-button');
+        productButton.addEventListener('click', () => {
+            // Store the selected product data and navigate to details page
+            localStorage.setItem('selectedProduct', JSON.stringify(product));
+            window.location.href = '/detail';
+        });
     });
-    preventDefault();
 });

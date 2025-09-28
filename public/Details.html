@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto p-8">
+        <!-- Back Button -->
+        <button onclick="window.history.back()" class="mb-6 px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">
+            ← Back to Products
+        </button>
+        
+        <!-- Product Details Container -->
+        <div id="product-details" class="bg-white rounded-lg p-6">
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Product Image -->
+                <div class="md:w-1/2 flex justify-center">
+                    <img id="product-image" src="" alt="" class="w-full max-w-md rounded-lg">
+                </div>
+                
+                <!-- Product Info -->
+                <div class="md:w-1/2">
+                    <h1 id="product-name" class="text-3xl font-bold text-gray-800 mb-4"></h1>
+                    <p id="product-price" class="text-2xl font-bold text-green-600 mb-6"></p>
+                    <p id="product-description" class="text-gray-600 mb-6">
+                        Hello world, sample text description. This is an amazing product with great features.
+                    </p>
+                    
+                    <!-- Action Buttons -->
+                    <div class="flex gap-4">
+                        <button class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                            Add to Cart
+                        </button>
+                        <button class="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Load product details when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            const productData = localStorage.getItem('selectedProduct');
+            
+            if (productData) {
+                const product = JSON.parse(productData);
+                
+                // Update the page with product details
+                document.getElementById('product-image').src = product.image;
+                document.getElementById('product-name').textContent = product.name;
+                document.getElementById('product-price').textContent = `₱${product.price.toFixed(2)}`;
+                localStorage.removeItem('selectedProduct');
+            } else {
+                window.location.href = '/products';
+            }
+        });
+    </script>
+</body>
+</html>

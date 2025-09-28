@@ -3,3 +3,5 @@
 09/27/2025 - Yesterday(09/26/2025) I already finished the hero section of Ecossential, today I will make the products section and render it on the server. Blockers: None.
 
 09/28/2025 - Yesterday(09/27/2025) I've started  the product section of Ecossential and I tested it on the server, today I will make the popup for the product details and try to improve the UI of the product page. Blockers: None.
+
+09/29/2025 - Yesterday(09/28/2025) I've made the product details page, and I've tested it on the server, today I will try to make the add to cart page and improve the UI for the product page.
