@@ -36,7 +36,7 @@ const products = [
     },
     {
         id: 6,
-        name: "Retro Sunglasses ashhfd haskdfhaskfhsh ashfkjfh kasj ",
+        name: "Retro Sunglasses",
         price: 25.00,
         image: "./images/sample-product.jpg",
         description: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."

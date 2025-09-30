@@ -4,6 +4,6 @@
 
 09/28/2025 - Yesterday(09/27/2025) I've started  the product section of Ecossential and I tested it on the server, today I will make the popup for the product details and try to improve the UI of the product page. Blockers: None.
 
-09/29/2025 - Yesterday(09/28/2025) I've made the product details page, and I've tested it on the server, today I will try to make the add to cart page and improve the UI for the product page.
+09/29/2025 - Yesterday(09/28/2025) I've made the product details page, and I've tested it on the server, today I will try to make the add to cart page and improve the UI for the product page. Blockers: Short time allotment due to studies
 
-09/30/2025
+09/30/2025 - Yesterday (09/29/2025) I only started adding the cart icon and button on the details page, but due to studies I wasn't able to poplish and refine the add to cart page, today I will try to give more time on the add to cart page and hopefully finish it, Blockers: Time constraints.
