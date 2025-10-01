@@ -41,11 +41,13 @@ app.get('/about', (req, res) => {
     res.sendFile(path.join(__dirname, "../public", "About.html"));
 });
 
-// Add API endpoint to get product data
-app.get('/api/products', (req, res) => {
-    // You might need to import your products here or use a database
-    res.json(products);
-});
+app.get('/cart', (req, res) => {
+    res.sendFile(path.join(__dirname, "../public", "Cart.html"))
+})
+
+app.get('/favorites', (req, res) => {
+    res.sendFile(path.join(__dirname, "../public", "Favorites.html"))
+})
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

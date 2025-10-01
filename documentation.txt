@@ -7,3 +7,5 @@
 09/29/2025 - Yesterday(09/28/2025) I've made the product details page, and I've tested it on the server, today I will try to make the add to cart page and improve the UI for the product page. Blockers: Short time allotment due to studies
 
 09/30/2025 - Yesterday (09/29/2025) I only started adding the cart icon and button on the details page, but due to studies I wasn't able to poplish and refine the add to cart page, today I will try to give more time on the add to cart page and hopefully finish it, Blockers: Time constraints.
+
+10/01/2025 - Yesterday (09/30/2025) I already finished the add to cart display, today I will finished the total amount checkout for the same page. Blockers: Time constraints.

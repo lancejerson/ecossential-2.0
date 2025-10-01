@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./app/styles/style.css">
+</head>
+<body>
+    <div class="h-screen w-full p-[35px] flex flex-col gap-10">
+        <nav class="flex flex-row items-center w-full justify-between">
+            <div class="logo">
+                <img src="#" alt="Logo">
+            </div>
+            <ul class="h-full flex flex-row gap-6">
+                <li><button onclick="location.href='/app'">Home</button></li>
+                <li><button onclick="location.href='/rules'">Rules</button></li>
+                <li><button onclick="location.href='/about'">About</button></li>
+            </ul>
+            <ul class="flex flex-row gap-6 items-center items-center justify-center">
+                <li class="rounded-full border h-[30px] w-[30px] p-[15px] items-center flex justify-center grey-border transform hover:scale-[1.2] duration-300">
+                    <button><i class="fa-solid fa-magnifying-glass text-[15px] text-orange-500"></i></button>
+                </li>
+                <li class="rounded-full border h-[30px] w-[30px] p-[15px] items-center flex justify-center grey-border transform hover:scale-[1.2] duration-300">
+                    <button onclick="location.href = '/favorites'"><i class="fa-regular fa-heart text-[15px] text-orange-500"></i></button>
+                </li>
+                <li class="rounded-full border h-[30px] w-[30px] p-[15px] items-center flex justify-center grey-border transform hover:scale-[1.2] duration-300">
+                    <button onclick="location.href='/cart'"><i class="fa-solid fa-cart-shopping text-[15px] text-orange-500"></i></button>
+                </li>
+            </ul>
+        </nav>
+        <div class="h-[90%] w-full flex justify-center items-center">
+            <div class="h-full w-full flex flex-row justify-center items-center">
+                <div class="w-[50%] h-full overflow-y-auto p-[15px] flex flex-col gap-10" id="cart-container">
+                    <!--Items that were added to cart will be displayed here-->
+                </div>
+                <div class="w-[50%] h-full border" id="total-amount">
+                    <!--Price Computations will be displayed here-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/cart.js"></script>
+</body>
+</html>
