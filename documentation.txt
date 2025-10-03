@@ -14,4 +14,4 @@
 
 10/03/2025 - Yesterday (10/02/2025) I already improved the UI of the add-to-cart page, today I will make the favorites page together with its functionality on the other pages. Blockers: None.
 
-10/04/2025 - 
+10/04/2025 - Yesterday (10/04/2025) instead of making the favorites page I focused on improving the UI of the details page since favorites page has the same functionality and logic as the add to cart so I skipped it instead of focusing on that, today I will try to make the favorites page. Blockers: Time constraints due to induction(SWE pinning).
