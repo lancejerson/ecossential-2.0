@@ -67,19 +67,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update price container ONCE after the loop
         priceContainer.innerHTML = `
-        <div class="flex flex-col justify-center items-center overflow-hidden h-[60%] w-[60%] border">
-            <div class="w-full h-[20%] w-full flex justify-center items-center border">
-                <h1 class="text-[15px]">Order Summary</h1>
+        <div class="flex flex-col justify-center items-center overflow-hidden h-[60%] w-[60%] border rounded-md black-border">
+            <div class="w-full h-[20%] w-full flex justify-center items-center border black-border">
+                <h1 class="text-[35px]">Order Summary</h1>
             </div>
-            <div class="h-[50%] border w-full">
+            <div class="h-[50%] border w-full p-[15px] black-border">
                 <h3>Subtotal: ₱${subtotal.toFixed(2)}</h3>
                 <h3>Shipping: Free</h3>
             </div>
-            <div class="h-[15%] border w-full">
+            <div class="h-[15%] border w-full p-[15px] black-border">
                 <h3><h3 class="font-bold text-lg">Total: ₱${subtotal.toFixed(2)}</h3></h3>
             </div>
-            <div class="h-[15%] border w-full">
-                <button>Checkout</button>
+            <div class="h-[15%] border w-full p-[15px] black-border">
+                <button class="w-full h-full flex justify-center items-center">Checkout</button>
             </div>
         </div>
 

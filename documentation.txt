@@ -1,4 +1,4 @@
-09/26/2025 - Yesterday(09/25/2025) I made intialized the app and made the navigation bar, today I will improve it more and start on the hero section. Blockers: None.
+09/26/2025 - Yesterday(09/25/2025) I intialized the app and made the navigation bar, today I will improve it more and start on the hero section. Blockers: None.
 
 09/27/2025 - Yesterday(09/26/2025) I already finished the hero section of Ecossential, today I will make the products section and render it on the server. Blockers: None.
 
@@ -10,4 +10,6 @@
 
 10/01/2025 - Yesterday (09/30/2025) I already finished the add to cart display, today I will finished the total amount checkout for the same page. Blockers: Time constraints.
 
-10/02/2025 - Yester (10/01/2025) I already finished adding the checkout total for the Cart page, today I will improve the UI for the entire page and start making the Favorites page. Blockers: Time constraints.
+10/02/2025 - Yesterday (10/01/2025) I already finished adding the checkout total for the Cart page, today I will improve the UI for the entire page and start making the Favorites page. Blockers: Time constraints.
+
+10/03/2025 -Yesterday (10/02/2025) I already improved the UI of the add-to-cart page, today I will make the favorites page together with its functionality on the other pages. Blockers: None.
