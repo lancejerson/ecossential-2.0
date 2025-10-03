@@ -12,4 +12,6 @@
 
 10/02/2025 - Yesterday (10/01/2025) I already finished adding the checkout total for the Cart page, today I will improve the UI for the entire page and start making the Favorites page. Blockers: Time constraints.
 
-10/03/2025 -Yesterday (10/02/2025) I already improved the UI of the add-to-cart page, today I will make the favorites page together with its functionality on the other pages. Blockers: None.
+10/03/2025 - Yesterday (10/02/2025) I already improved the UI of the add-to-cart page, today I will make the favorites page together with its functionality on the other pages. Blockers: None.
+
+10/04/2025 - 
