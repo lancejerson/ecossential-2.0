@@ -8,36 +8,39 @@
     <link rel="stylesheet" href="./app/styles/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
-<body class="flex justify-center items-center h-screen w-full">
-    <div class="w-[80%] h-[80%] flex flex-row justify-center">
-        <div class="w-[40%] h-full flex justify-center items-center">
+<body>
+    <div class="h-screen w-full flex flex-col p-[35px] gap-10 items-center">
+        <nav class="flex flex-row items-center w-full justify-between">
+            <div class="logo">
+                <img src="#" alt="Logo">
+            </div>
+            <ul class="h-full flex flex-row gap-6">
+                <li><button class="inline-block pb-1 border-b-2 border-transparent hover:border-black transition-colors duration-500 focus:outline-none" onclick="location.href='/'">Home</button></li>
+                <li><button onclick="location.href='/rules'">Rules</button></li>
+                <li><button onclick="location.href='/about'">About</button></li>
+            </ul>
+            <ul class="flex flex-row gap-3 items-center items-center justify-center">
+                <li class="rounded-full h-[30px] w-[30px] p-[15px] items-center flex justify-center transform hover:scale-[1.2] duration-300">
+                    <button><i class="fa-solid fa-magnifying-glass text-[15px] text-black"></i></button>
+                </li>
+                <li class="rounded-full h-[30px] w-[30px] p-[15px] items-center flex justify-center transform hover:scale-[1.2] duration-300">
+                    <button onclick="location.href = '/favorites'"><i class="fa-regular fa-heart text-[15px] text-black"></i></button>
+                </li>
+                <li class="rounded-full h-[30px] w-[30px] p-[15px] items-center flex justify-center transform hover:scale-[1.2] duration-300">
+                    <button onclick="location.href='/cart'"><i class="fa-solid fa-cart-shopping text-[15px] text-black"></i></button>
+                </li>
+            </ul>
+        </nav>
+        <!--        
+        <div class="w-[40%] h-[60%] flex justify-center items-center">
             <img class="h-full w-[100%] rounded-xl" id="product-image"></img>
-        </div>
-        <div class="flex flex-col w-[40%] p-[35px] h-[100%]">
-            <div class="flex flex-col gap-[25px] w-full h-full">
-                <div class="flex flex-col gap-[25px] w-full p-[20px]">
-                    <h1 id="product-name" class="text-[35px] font-medium break-words overflow-auto"></h1>
-                    <p id="product-price" class="font-xl orange-text text-[20px]"></p>
-                    <p id="product-description" class="text-gray-400 break-words overflow-auto max-h-[300px] overflow-y-auto"></p>
-                </div>
-                <div class="flex flex-col gap-[25px] mt-auto pt-[20px]">
-                    <button class="bg-orange-500 text-white rounded-lg h-[50px] w-[150px] flex flex-row gap-[5px] items-center justify-center text-[1.2rem] transform hover:scale-[1.05] duration-300 active:scale-[1.1]" id="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping text-[15px]"></i></button>
-                    <div class="flex flex-row gap-[10px]">
-                        <div class="rounded-full border h-[40px] w-[40px] p-[15px] flex items-center justify-center grey-border transform hover:scale-[1.2] duration-300">
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center">
-                                <i class="fa-brands fa-facebook text-[20px] text-orange-400"></i>
-                            </a>
-                        </div>
-                        <div class="rounded-full border h-[40px] w-[40px] p-[15px] flex items-center justify-center grey-border transform hover:scale-[1.2] duration-300">
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center">
-                                <i class="fa-brands fa-instagram text-[20px] text-orange-400"></i>
-                            </a>
-                        </div>
-                        <div class="rounded-full border h-[40px] w-[40px] border-1 flex justify-center grey-border hover:scale-[1.2] duration-300 active:scale-[1.25]">
-                                <button onclick="location.href='/cart'"><i class="fa-solid fa-cart-shopping text-[15px] text-orange-500"></i></button>
-                        </div>
-                    </div>
-                </div>
+        </div>-->
+        <div class="h-[90%] w-[80%] flex flex-row">
+            <div class="w-[50%] h-full flex justify-center items-center rounded-lg">
+                <img src="" alt="" class="overflow-hidden object-cover h-full w-full rounded-lg" id="product-image">
+            </div>
+            <div class="w-[50%] h-full pl-[25px]" id="product-data">
+                <!--Product data-->
             </div>
         </div>
     </div>

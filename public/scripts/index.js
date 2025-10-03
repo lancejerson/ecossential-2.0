@@ -3,7 +3,7 @@ import products from "./products.js"
 const container = document.getElementById('container');
 
 document.addEventListener('DOMContentLoaded', () => {
-    products.forEach(product => {
+    products.map(product => {
         const productContainer = document.createElement('div');
         productContainer.className = 'flex flex-col gap-[15px]';
         productContainer.innerHTML = `
@@ -18,7 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
         container.appendChild(productContainer);
         const productButton = productContainer.querySelector('.product-button');
         productButton.addEventListener('click', () => {
-            localStorage.setItem('selectedProduct', JSON.stringify(product))
+            localStorage.setItem('selectedProduct', JSON.stringify({
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                image: product.image,
+                description: product.description,
+                length: product.length, 
+                width: product.width,
+            }))
             window.location.href='/detail'
         })
     });

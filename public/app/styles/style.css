@@ -4,19 +4,6 @@
     font-family: 'Poppins', sans-seri;
 }
 
-.grey-border{
-    border: 1px solid grey;
-    border-color: rgb(158, 158, 158);
-}
-
-.brown-text{
-    color: rgba(150, 43, 43, 0.912);
-}
-
-.orange-text{
-    color: rgb(228, 133, 8);
-}
-
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
@@ -25,6 +12,24 @@
     scrollbar-width: none;
 }
 
+.yellow-bg{
+    background-color: #ffe100;
+}
+
+
 .black-border{
     border-color: #000000;
+}
+
+.grey-border{
+    border: 1px solid grey;
+    border-color: rgb(158, 158, 158);
+}
+
+.grey-border2{
+    border-color: rgb(158, 158, 158);
+}
+
+.grey-text{
+    color: rgb(158, 158, 158);
 }

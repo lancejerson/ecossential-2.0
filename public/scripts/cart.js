@@ -67,16 +67,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update price container ONCE after the loop
         priceContainer.innerHTML = `
-        <div class="flex flex-col justify-center items-center overflow-hidden h-[60%] w-[60%] border rounded-md black-border">
+        <div class="flex flex-col justify-center items-center overflow-hidden h-[60%] w-[60%] border black-border">
             <div class="w-full h-[20%] w-full flex justify-center items-center border black-border">
                 <h1 class="text-[35px]">Order Summary</h1>
             </div>
-            <div class="h-[50%] border w-full p-[15px] black-border">
-                <h3>Subtotal: ₱${subtotal.toFixed(2)}</h3>
-                <h3>Shipping: Free</h3>
+            <div class="h-[50%] border w-full p-[25px] black-border flex flex-col justify-between">
+                <div class="flex justify-between w-full">
+                    <h3 class="font-bold text-lg">SUBTOTAL:</h3>
+                    <h3>${subtotal.toFixed(2)}</h3>
+                </div>
+                <div class="flex justify-between w-full">
+                    <h3 class="font-bold text-lg">SHIPPING:</h3>
+                    <h3>FREE</h3>
+                </div>
+                <div class="flex justify-between w-full">
+                    <h3 class="font-bold text-lg">QUANTITY:</h3>
+                    <h3>${cartItems.length}</h3>
+                </div>
             </div>
-            <div class="h-[15%] border w-full p-[15px] black-border">
-                <h3><h3 class="font-bold text-lg">Total: ₱${subtotal.toFixed(2)}</h3></h3>
+            <div class="h-[15%] border w-full p-[25px] black-border flex items-center">
+                <div class="flex justify-between w-full">
+                    <h3 class="font-bold text-lg">TOTAL:</h3>
+                    <h3>${subtotal.toFixed(2)}</h3>
+                </div>
             </div>
             <div class="h-[15%] border w-full p-[15px] black-border">
                 <button class="w-full h-full flex justify-center items-center">Checkout</button>
