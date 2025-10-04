@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('cart-container');
     const priceContainer = document.getElementById('total-amount');
+    const cartData = localStorage.getItem('addedToCart');
 
     try {
         container.innerHTML = '';
 
         // Get cart data from localStorage
-        const cartData = localStorage.getItem('addedToCart');
         console.log('Raw cart data from localStorage:', cartData);
 
         let cartItems = [];
