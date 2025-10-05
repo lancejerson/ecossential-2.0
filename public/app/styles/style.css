@@ -33,3 +33,7 @@
 .grey-text{
     color: rgb(158, 158, 158);
 }
+
+.red-border{
+    border-color: red;
+}

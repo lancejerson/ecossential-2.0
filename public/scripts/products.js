@@ -38,7 +38,7 @@ const products = [
     },
     {
         id: 5,
-        name: "Wool Scarf",
+        name: "Wool Scarf adadadasdadasda",
         price: 20.00,
         image: "./images/sample-product.jpg",
         description: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
