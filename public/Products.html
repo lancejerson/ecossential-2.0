@@ -16,8 +16,8 @@
             </div>
             <ul class="h-full flex flex-row gap-6">
                 <li><button class="inline-block pb-1 border-b-2 border-transparent hover:border-black transition-colors duration-500 focus:outline-none" onclick="location.href='/'">Home</button></li>
+                <li><button class="inline-block pb-1 border-b-2 border-transparent hover:border-black transition-colors duration-500 focus:outline-none" onclick="location.href='/products'">Products</button></li>
                 <li><button class="inline-block pb-1 border-b-2 border-transparent hover:border-black transition-colors duration-500 focus:outline-none" onclick="location.href='/rules'">Rules</button></li>
-                <li><button class="inline-block pb-1 border-b-2 border-transparent hover:border-black transition-colors duration-500 focus:outline-none" onclick="location.href='/about'">About</button></li>
             </ul>
             <ul class="flex flex-row gap-3 items-center items-center justify-center">
                 <li class="rounded-full h-[30px] w-[30px] p-[15px] items-center flex justify-center transform hover:scale-[1.2] duration-300">
@@ -31,10 +31,8 @@
                 </li>
             </ul>
         </nav>
-        <div class="flex flex-col h-full w-full gap-[15px] overflow-y-auto no-scrollbar">
-            <div class="grid grid-cols-4 gap-[15px] w-full justify-center items-center" id="container">
-                <!-- Product cards will be dynamically inserted here -->
-            </div>
+        <div class="h-[90%] w-[80%] overflow-y-auto no-scrollbar grid grid-cols-5 gap-2" id="container">
+            <!-- Product cards will be dynamically inserted here -->
         </div>
     </div>
     <script src="./scripts/index.js" type="module"></script>
