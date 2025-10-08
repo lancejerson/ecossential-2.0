@@ -4,43 +4,31 @@ document.addEventListener("DOMContentLoaded", () => {
     const willDeliverCheckbox = document.getElementById('will-deliver');
     const willPickupCheckbox = document.getElementById('will-pickup');
 
-    let isDelivery = true;
-
     deliveryButton.addEventListener("click", (e) => {
         e.preventDefault();
-        if (!isDelivery) {
-            isDelivery = true;
-            deliveryButton.classList.toggle('bg-violet-400');
-            deliveryButton.classList.toggle('text-violet-400');
-            deliveryButton.classList.toggle('text-black');
-            deliveryButton.classList.toggle('bg-white');
 
-            pickupButton.classList.remove('bg-violet-400', 'text-violet-400', 'text-black', 'bg-white');
+        deliveryButton.classList.add('bg-violet-100', 'border-violet-400', 'text-violet-400', 'text-black');
+        pickupButton.classList.remove('bg-violet-100', 'border-violet-400', 'text-violet-400', 'text-black');
 
-            willDeliverCheckbox.checked = true;
-            willPickupCheckbox.checked = false;
-
-            deliveryButton.disabled = true;
-            pickupButton.disabled = false;
-        }
+        willDeliverCheckbox.checked = true;
+        willPickupCheckbox.checked = false;
+        willDeliverCheckbox.disabled = true;
+        willPickupCheckbox.disabled = true;
+        deliveryButton.disabled = true;
+        pickupButton.disabled = false;
     });
 
     pickupButton.addEventListener("click", (e) => {
         e.preventDefault();
-        if (isDelivery) {
-            isDelivery = false;
-            pickupButton.classList.toggle('bg-violet-400');
-            pickupButton.classList.toggle('text-violet-400');
-            pickupButton.classList.toggle('text-black');
-            pickupButton.classList.toggle('bg-white');
 
-            deliveryButton.classList.remove('bg-violet-400', 'text-violet-400', 'text-black', 'bg-white');
+        pickupButton.classList.add('bg-violet-100', 'border-violet-400', 'text-violet-400', 'text-black');
+        deliveryButton.classList.remove('bg-violet-100', 'border-violet-400', 'text-violet-400', 'text-black');
 
-            willPickupCheckbox.checked = true;
-            willDeliverCheckbox.checked = false;
-
-            pickupButton.disabled = true;
-            deliveryButton.disabled = false;
-        }
+        willPickupCheckbox.checked = true;
+        willDeliverCheckbox.checked = false;
+        willPickupCheckbox.disabled = true;
+        willDeliverCheckbox.disabled = true;
+        pickupButton.disabled = true;
+        deliveryButton.disabled = false;
     });
 });
