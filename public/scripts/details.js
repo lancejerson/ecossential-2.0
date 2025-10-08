@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="flex justify-between w-full h-[50%] items-center">
                     <button class="w-[45%] bg-white text-black border-2 border-black h-[80%] rounded-full transform hover:scale-[1.05] duration-300 active:scale-[1.1]" id="add-to-cart">Add to Cart</button>
-                    <button class="w-[45%] bg-black text-white border-2 border-black h-[80%] rounded-full transform hover:scale-[1.05] duration-300 active:scale-[1.1]">Buy Now</button>    
+                    <button class="w-[45%] bg-black text-white border-2 border-black h-[80%] rounded-full transform hover:scale-[1.05] duration-300 active:scale-[1.1]" onclick="location.href='/checkout'">Buy Now</button>    
                 </div>
             </div>
             <div class="pt-[15px] flex flex-row gap-3">

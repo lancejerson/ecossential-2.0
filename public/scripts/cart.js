@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Get cart data from localStorage
         console.log('Raw cart data from localStorage:', cartData);
 
-        let cartItems = [];
+        let cartItems;
 
         // Handle different scenarios (your existing logic is good)
         if (!cartData || cartData === 'null' || cartData === 'undefined') {
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
             <div class="h-[15%] border w-full p-[15px] black-border">
-                <button class="w-full h-full flex justify-center items-center">Checkout</button>
+                <button class="w-full h-full flex justify-center items-center" onclick="location.href='/checkout'">Checkout</button>
             </div>
         </div>
 

@@ -49,6 +49,10 @@ app.get('/favorites', (req, res) => {
     res.sendFile(path.join(__dirname, "../public", "Favorites.html"))
 })
 
+app.get('/checkout', (req, res) => {
+    res.sendFile(path.join(__dirname, "../public", "Checkout.html"))
+})
+
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });

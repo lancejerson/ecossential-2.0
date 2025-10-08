@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./app/styles/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="h-screen w-full flex flex-col p-[35px] gap-10 items-center">
+        <nav class="flex flex-row items-center w-full justify-between">
+            <div class="logo">
+                <img src="#" alt="Logo">
+            </div>
+            <ul class="h-full flex flex-row gap-6">
+                <li><button class="inline-block pb-1 border-b-2 border-transparent hover:border-black transition-colors duration-500 focus:outline-none" onclick="location.href='/'">Home</button></li>
+                <li><button class="inline-block pb-1 border-b-2 border-transparent hover:border-black transition-colors duration-500 focus:outline-none" onclick="location.href='/products'">Products</button></li>
+                <li><button class="inline-block pb-1 border-b-2 border-transparent hover:border-black transition-colors duration-500 focus:outline-none" onclick="location.href='/rules'">Rules</button></li>
+            </ul>
+            <ul class="flex flex-row gap-3 items-center items-center justify-center">
+                <li class="rounded-full h-[30px] w-[30px] p-[15px] items-center flex justify-center transform hover:scale-[1.2] duration-300">
+                    <button><i class="fa-solid fa-magnifying-glass text-[15px] text-black"></i></button>
+                </li>
+                <li class="rounded-full h-[30px] w-[30px] p-[15px] items-center flex justify-center transform hover:scale-[1.2] duration-300">
+                    <button onclick="location.href = '/favorites'"><i class="fa-regular fa-heart text-[15px] text-black"></i></button>
+                </li>
+                <li class="rounded-full h-[30px] w-[30px] p-[15px] items-center flex justify-center transform hover:scale-[1.2] duration-300">
+                    <button onclick="location.href='/cart'"><i class="fa-solid fa-cart-shopping text-[15px] text-black"></i></button>
+                </li>
+            </ul>
+        </nav>
+        <div class="h-[90%] w-full flex flex-row items-center">
+            <div class="h-full w-[50%] flex flex-col gap-6 border p-[20px]">
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-[6xl] text-[30px] text-black font-semibold">Checkout</h1>
+                    <h1 class="text-[6xl] text-[20px] text-black font-normal">Shipping Information</h1>
+                </div>
+                <div class="flex flex-row w-full justify-between items-center">
+                    <button class="flex w-[45%] h-[3rem] items-center border border-black p-[1.5rem] gap-5 rounded-xl" id="delivery">
+                        <label class="flex items-center">
+                            <input type="checkbox" id="will-deliver">
+                        </label>
+                        <i class="fa-solid fa-truck-moving text-[1rem]" id="delivery-icon"><span class="ml-5 text-[1rem] font-medium">Delivery</span></i>
+                    </button>
+                    <button class="flex w-[45%] h-[3rem] items-center border border-black p-[1.5rem] gap-5 rounded-xl" id="pickup">
+                        <label class="flex items-center">
+                            <input type="checkbox" id="will-pickup">
+                        </label>
+                        <i class="fa-solid fa-box text-[1rem]" id="pickup-icon"><span class="ml-5 text-[1rem] font-medium">Pick Up</span></i>
+                    </button>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-[6xl] text-[15px] text-black font-normal">Full Name <span class="text-red-600">*</span></h1>
+                        <label>
+                            <input type="text" placeholder="John Doe" class="flex w-full h-[3rem] items-center border border-black p-[1.5rem] gap-5 rounded-xl">
+                        </label>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-[6xl] text-[15px] text-black font-normal">Email Address<span class="text-red-600">*</span></h1>
+                        <label>
+                            <input type="text" placeholder="johndoe@gmail.com" class="flex w-full h-[3rem] items-center border border-black p-[1.5rem] gap-5 rounded-xl">
+                        </label>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-[6xl] text-[15px] text-black font-normal">Phone Number<span class="text-red-600">*</span></h1>
+                        <label>
+                            <input type="number" placeholder="09123456789" class="flex w-full h-[3rem] items-center border border-black p-[1.5rem] gap-5 rounded-xl">
+                        </label>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-3 w-full justify-between items-center">
+                    <div class="flex flex-col gap-3 w-[30%]">
+                        <h1 class="text-[6xl] text-[15px] text-black font-normal">Province</h1>
+                        <label>
+                            <input type="text" placeholder="Iloilo" class="flex w-full h-[3rem] items-center border border-black p-[1.5rem] gap-5 rounded-xl">
+                        </label>
+                    </div>
+                    <div class="flex flex-col gap-3 w-[30%]">
+                        <h1 class="text-[6xl] text-[15px] text-black font-normal">City</h1>
+                        <label>
+                            <input type="text" placeholder="Zarraga" class="flex w-full h-[3rem] items-center border border-black p-[1.5rem] gap-5 rounded-xl">
+                        </label>
+                    </div>
+                    <div class="flex flex-col gap-3 w-[30%]">
+                        <h1 class="text-[6xl] text-[15px] text-black font-normal">Barangay & Street Name</h1>
+                        <label>
+                            <input type="text" placeholder="Sambag" class="flex w-full h-[3rem] items-center border border-black p-[1.5rem] gap-5 rounded-xl">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/checkout.js" type="module"></script>
+</body>
+</html>
