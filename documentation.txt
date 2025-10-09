@@ -19,3 +19,5 @@
 10/05/2025 - Yesterday (10/04/2025) I finished making the favorite page. Today I will focus on improving the UI of all the pages once again and try to tackle the checkout page. Blockers: Time constraints due to class related works.
 
 10/08/2025 - Yesterday (10/07/2025) I've finished 70% of the checkout page. Today I will try to finish it and improve the functionality. Blockers time constraints due to related works.
+
+10/09/2025 - Yesterday (10/08/2025) I've finished the checkout page, I might stop for a while and focus on studying the backend part and convert the entire website into React.
