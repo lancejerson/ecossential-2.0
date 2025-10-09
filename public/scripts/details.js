@@ -22,7 +22,6 @@
 //     });
 // })
 
-const addToCart = document.getElementById('add-to-cart');
 const productDataContainer = document.getElementById('product-data')
 const selectedItem = localStorage.getItem('selectedProduct');
 let basket = JSON.parse(localStorage.getItem('addedToCart')) || []; // Load existing cart
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('product-image').src = item.image;
         const productData = document.createElement('div')
         
-        productData.className = "flex flex-col h-full w-full"
+        productData.className = "flex flex-col h-full w-full pl-[25px] items-center"
         productData.innerHTML = `
             <div class="flex flex-col justify-between h-[15%] w-full border-b grey-border2 pb-s[15px]">
                 <h4 class="grey-text text-[15px]">PANTS COLLECTION</h4>
@@ -61,14 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         <button id="heart"><i class="fa-regular fa-heart text-[15px] text-black"></i></button>
                     </div>
                 </div>
-                <div class="flex justify-between w-full h-[50%] items-center">
-                    <button class="w-[45%] bg-white text-black border-2 border-black h-[80%] rounded-full transform hover:scale-[1.05] duration-300 active:scale-[1.1]" id="add-to-cart">Add to Cart</button>
-                    <button class="w-[45%] bg-black text-white border-2 border-black h-[80%] rounded-full transform hover:scale-[1.05] duration-300 active:scale-[1.1]" onclick="location.href='/checkout'">Buy Now</button>    
+                <div class="flex flex-row gap-3 w-full">
+                    <h1 class= "text-[30px] text-black font-black">PRICE:</h1>
+                    <h1 class= "text-[30px] text-black font-black"><i class="fa-solid fa-peso-sign"></i>${item.price}</h1>
                 </div>
             </div>
-            <div class="pt-[15px] flex flex-row gap-3">
-                <h1 class= "text-[30px] text-black font-black">PRICE:</h1>
-                <h1 class= "text-[30px] text-black font-black"><i class="fa-solid fa-peso-sign"></i>${item.price}</h1>
+            <div class="pt-[15px] flex justify-between w-full h-[8%] items-center">
+                <button class="w-full bg-white text-black border-2 border-black h-[100%] rounded-full transform hover:scale-[1.05] duration-300 active:scale-[1.1]" id="add-to-cart">Add to Cart</button>
             </div>
         `
         productDataContainer.appendChild(productData)

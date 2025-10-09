@@ -47,34 +47,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.warn('Invalid item at index', index, item);
                 return;
             }
-            
+
             const cartItem = document.createElement('div');
-            cartItem.className = 'h-[40%] h-full flex flex-row border-b p-[20px]';
-            
+            cartItem.className = 'h-[80%] w-full flex flex-row border-b pb-[0.5rem] justify-center items-center';
+
             cartItem.innerHTML = `
-                <div class="flex flex-col gap-9">
+                <div class="flex flex-col justify-between h-full p-[20px]">
                     <h3 class="font-semibold text-lg">${item.name || 'Unknown Product'}</h3>
                     <p class="text-gray-600 text-xl font-bold">₱${(item.price || 0).toFixed(2)}</p>
                     <p class="text-sm text-gray-500 mt-2">${item.description || ''}</p>
                 </div>
-                <div class="w-[35%] h-full flex justify-center items-center">
+                <div class="w-[40%] h-full flex justify-center items-center">
                     <img src="${item.image || ''}" alt="${item.name || 'Product'}" 
-                        class="w-full h-full object-cover rounded-lg border">
-                </div>
+                    class="w-full h-full object-cover rounded-lg border">
+                </div> 
             `;
             container.appendChild(cartItem);
         });
 
         // Update price container ONCE after the loop
         priceContainer.innerHTML = `
-        <div class="flex flex-col justify-center items-center overflow-hidden h-[60%] w-[60%] border black-border">
-            <div class="w-full h-[20%] w-full flex justify-center items-center border black-border">
-                <h1 class="text-[35px]">Order Summary</h1>
+        <div class="flex flex-col items-center w-[80%] bg-white rounded-lg">
+            <div class="w-full py-6 flex justify-center items-center border grey-border2">
+                <h1 class="text-[28px] font-bold">Order Summary</h1>
             </div>
-            <div class="h-[50%] border w-full p-[25px] black-border flex flex-col justify-between">
+            <div class="w-full p-6 border grey-border2 space-y-4">
                 <div class="flex justify-between w-full">
                     <h3 class="font-bold text-lg">SUBTOTAL:</h3>
-                    <h3>${subtotal.toFixed(2)}</h3>
+                    <h3>$${subtotal.toFixed(2)}</h3>
                 </div>
                 <div class="flex justify-between w-full">
                     <h3 class="font-bold text-lg">SHIPPING:</h3>
@@ -82,20 +82,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="flex justify-between w-full">
                     <h3 class="font-bold text-lg">QUANTITY:</h3>
-                    <h3>${cartItems.length}</h3>
+                    <h3>${cartItems.length} Items(s)</h3>
                 </div>
             </div>
-            <div class="h-[15%] border w-full p-[25px] black-border flex items-center">
+            <div class="w-full p-6 border grey-border2">
                 <div class="flex justify-between w-full">
-                    <h3 class="font-bold text-lg">TOTAL:</h3>
-                    <h3>${subtotal.toFixed(2)}</h3>
+                    <h3 class="font-bold text-xl">TOTAL:</h3>
+                    <h3 class="font-bold text-xl">$${subtotal.toFixed(2)}</h3>
                 </div>
-            </div>
-            <div class="h-[15%] border w-full p-[15px] black-border">
-                <button class="w-full h-full flex justify-center items-center" onclick="location.href='/checkout'">Checkout</button>
             </div>
         </div>
-
+        <div class="w-[80%] h-[7rem] flex flex-col gap-3 items-center justify-center">
+            <button class="h-[45%] w-full flex items-center justify-center bg-red-500" onclick="location.href='/checkout'">
+                <h1 class="text-[1.5rem] font-semibold text-white"> Checkout</h1>
+            </button>
+            <button class="h-[45%] w-full flex items-center justify-center bg-white border border-black" onclick="location.href='/products'">
+                <h1 class="text-[1.5rem] font-semibold text-black">Continue Shopping</h1>
+            </button>
+        </div>
+        
         `;
 
         // Show empty cart message if no items

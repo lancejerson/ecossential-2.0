@@ -8,13 +8,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./app/styles/style.css">
 </head>
-<body>
+<body class="pt-[10vh]">
     <div class="h-screen w-full p-[35px] flex flex-col gap-10">
-        <nav class="flex flex-row items-center w-full justify-between">
+        <nav class="flex flex-row items-center p-[35px] h-[10vh] w-full justify-between fixed top-0 left-0 right-0 bg-white z-50">
             <div class="logo">
                 <img src="#" alt="Logo">
             </div>
-            <ul class="h-full flex flex-row gap-6">
+            <ul class="h-full flex flex-row gap-6 items-center">
                 <li><button class="inline-block pb-1 border-b-2 border-transparent hover:border-black transition-colors duration-500 focus:outline-none" onclick="location.href='/'">Home</button></li>
                 <li><button class="inline-block pb-1 border-b-2 border-transparent hover:border-black transition-colors duration-500 focus:outline-none" onclick="location.href='/products'">Products</button></li>
                 <li><button class="inline-block pb-1 border-b-2 border-transparent hover:border-black transition-colors duration-500 focus:outline-none" onclick="location.href='/rules'">Rules</button></li>
@@ -31,13 +31,13 @@
                 </li>
             </ul>
         </nav>
-        <div class="h-[90%] w-full flex justify-center items-center">
-            <div class="h-full w-full flex flex-row justify-center items-center">
-                <div class="w-[50%] h-full overflow-y-auto p-[15px] flex flex-col gap-10" id="cart-container">
-                    <!--Items that were added to cart will be displayed here-->
+        <div class="min-h-screen w-full flex justify-center items-start">
+            <div class="w-full flex flex-row justify-center">
+                <div class="w-[50%] min-h-80vh flex flex-col gap-10" id="cart-container">
+                    <!-- Cart items go here -->
                 </div>
-                <div class="w-[50%] h-full flex justify-center" id="total-amount">
-                    <!--Price Computations will be displayed here-->
+                <div class="w-[30%] h-full flex sticky top-[10vh] flex-col gap-20 justify-center items-center" id="total-amount">
+                    <!-- Price computations will be inserted by JS -->
                 </div>
             </div>
         </div>

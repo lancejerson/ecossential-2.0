@@ -5,7 +5,6 @@ const container = document.getElementById('container');
 document.addEventListener('DOMContentLoaded', () => {
     products.map(product => {
         const productContainer = document.createElement('div');
-        // Simplified classes - let the grid handle the layout
         productContainer.className = 'flex flex-col overflow-hidden';
         productContainer.innerHTML = `
             <div class='flex flex-col items-center justify-center h-full w-full'>
@@ -18,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `;
+
         const productButton = productContainer.querySelector('.product-button');
         productButton.addEventListener('click', () => {
             localStorage.setItem('selectedProduct', JSON.stringify({
@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }));
             window.location.href = '/detail';
         });
-        
         container.appendChild(productContainer);
     });
 });
